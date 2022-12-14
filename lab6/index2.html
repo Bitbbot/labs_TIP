@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>task2</title>
+
+   <style>
+      .random {
+         display: flex;
+         flex-direction: column;
+      }
+
+      .field {
+         padding: 5px;
+      }
+
+      input {
+         width: 50px;
+      }
+
+      .button {
+         cursor: pointer;
+         background-color: rgb(255, 134, 134);
+         width: 60px;
+         text-align: center;
+      }
+   </style>
+</head>
+
+<body>
+   <form>
+      <div class="random">
+         <div class="field">
+            <label for="a">A</label>
+            <input type="text" name="a" id="a">
+         </div>
+
+         <div class="field">
+            <label for="b">B</label>
+            <input type="text" name="b" id="b">
+         </div>
+      </div>
+
+      <div class="field">
+         <label for="size">Размер массива</label>
+         <input type="text" name="size" id="size">
+      </div>
+
+      <div class="button">FILTER</div>
+   </form>
+
+   <script>
+      let submit = document.getElementsByClassName('button')[0];
+
+      submit.addEventListener('click', filter);
+
+      function filter(e) {
+         let a = +document.getElementById('a').value;
+         let b = +document.getElementById('b').value;
+         let size = +document.getElementById('size').value;
+
+         let array = randomize(size, a, b);
+
+         let filterArray = predicate(array, (el) => el > 50);
+
+         alert(`Сгенерированный массив:\n${array.join(", ")}\nОтфильтрованный массив: \n${filterArray.join(", ")}`);
+      }
+
+      function randomize(size, max, min) {
+         let array = [];
+
+         for (let i = 0; i < size; i++) {
+            let el = Math.random() * (max - min) + min;
+            array.push(el.toFixed(2));
+         }
+
+         return array;
+      }
+
+      function predicate(array, func) {
+         return array.filter(func);
+      }
+   </script>
+</body>
+
+</html>

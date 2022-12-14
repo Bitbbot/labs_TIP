@@ -1,0 +1,32 @@
+<html>
+
+<head>
+   <title>task 5</title>
+</head>
+
+<body>
+   <form name="form">
+      <div>
+         <label for="valueAlpha">Первое число</label><br>
+         <input type="text" name="valueAlpha" id="valueAlpha" size="10" onblur="func(form);">
+      </div><br>
+
+      <div>
+         <label for="valueBeta">Второе число</label><br>
+         <input type="text" name="valueBeta" id="valueBeta" size="10" onblur="func(form);">
+      </div>
+   </form>
+
+   <script>
+      function func(form) {
+         if (form.valueAlpha.value !== "" && form.valueBeta.value !== "") {
+            let buffer = form.valueAlpha.value;
+            form.valueAlpha.value = form.valueBeta.value;
+            form.valueBeta.value = buffer;
+         }
+      }
+   </script>
+</body>
+
+
+</html>

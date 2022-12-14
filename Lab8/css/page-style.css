@@ -1,0 +1,43 @@
+.body {
+  background-color: gray;
+}
+
+.main-theme {
+  background-color: blue;
+  color: white;
+}
+
+.container {
+  margin: 0;
+  width: 100%;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 1024px;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 1rem 2rem;
+}
+
+.main-nav {
+  margin: 0.2rem auto;
+  padding: 0.2rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-nav__item {
+  width: 100%;
+  text-align: center;
+}
+
+.main-nav__link {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  padding: 0.5rem;
+}

@@ -1,0 +1,37 @@
+<html>
+
+<head>
+   <title>task 3</title>
+</head>
+
+<body>
+   <form name="form1">
+      Ax: <input type="text" size="5" name="Ax" id="Ax">
+      <hr />
+      Ay: <input type="text" size="5" name="Ay" id="Ay">
+      <hr />
+      Bx: <input type="text" size="5" name="Bx" id="Bx">
+      <hr />
+      By: <input type="text" size="5" name="By" id="By">
+      <hr />
+      Cx: <input type="text" size="5" name="Cx" id="Cx">
+      <hr />
+      Cy: <input type="text" size="5" name="Cy" id="Cy">
+      <hr />
+      Result <input type="text" size="5" name="result" onfocus="func()">
+   </form>
+
+   <script>
+      function func() {
+         let Ax = document.form1.Ax.value;
+         let Ay = document.form1.Ay.value;
+         let Bx = document.form1.Bx.value;
+         let By = document.form1.By.value;
+         let Cx = document.form1.Cx.value;
+         let Cy = document.form1.Cy.value;
+         document.form1.result.value = 0.5 * (Math.abs((Ax - Cx) * (By - Cy) - (Bx - Cx) * (Ay - Cy)));
+      }
+   </script>
+</body>
+
+</html>

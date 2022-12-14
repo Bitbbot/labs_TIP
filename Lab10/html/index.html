@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lab10</title>
+    <link rel="stylesheet" href="../css/page-style.css" />
+    <link rel="stylesheet" href="../css/form-style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="content">
+        <form class="form">
+          <h2 class="form__caption">Add employee</h2>
+          <div class="form__section">
+            <div class="horizontal-container form__wrap-container">
+              <label
+                >Surname:
+                <input
+                  class="form__input form__input--small"
+                  id="add-surname"
+                  type="text"
+                  required
+              /></label>
+              <label
+                >Hiring date:
+                <input
+                  class="form__input form__input--small"
+                  id="add-hiring-date"
+                  type="date"
+                  required
+              /></label>
+              <label
+                >Tax:
+                <input
+                  class="form__input form__input--small form__tax-input"
+                  id="add-tax"
+                  type="number"
+                  min="10"
+                  required
+              /></label>
+              <label
+                >Firing date:
+                <input
+                  class="form__input form__input--small"
+                  id="add-firing-date"
+                  type="date"
+                  required
+              /></label>
+            </div>
+          </div>
+          <div class="horizontal-container">
+            <input
+              class="form__button main-theme"
+              id="add-btn"
+              type="button"
+              value="Add"
+            />
+            <input
+              class="form__button main-theme"
+              id="reset-add-btn"
+              type="reset"
+              value="Reset"
+            />
+          </div>
+        </form>
+        <form class="form">
+          <h2 class="form__caption">Staff information</h2>
+          <div class="form__section">
+            <h3 class="form__section-caption">Search parameters</h3>
+            <label for="employee-id">Surname:</label>
+            <input
+              id="employee-id"
+              class="form__input form__input--large"
+              type="text"
+              required
+            />
+          </div>
+          <div class="form__section">
+            <h3 class="form__section-caption">Search result</h3>
+            <div class="horizontal-container form__wrap-container">
+              <label
+                >Income:
+                <input
+                  class="form__input form__input--x-small"
+                  id="income"
+                  readonly
+              /></label>
+              <label
+                >Working days:
+                <input
+                  class="form__input form__input--x-small"
+                  id="work-days"
+                  readonly
+              /></label>
+              <label
+                >Weekends:
+                <input
+                  class="form__input form__input--x-small"
+                  id="weekends"
+                  readonly
+              /></label>
+            </div>
+          </div>
+          <div class="form__section">
+            <h3 class="form__section-caption">Employee info</h3>
+            <div class="horizontal-container form__wrap-container">
+              <label
+                >Surname:
+                <input
+                  class="form__input form__input--small"
+                  id="surname"
+                  readonly
+              /></label>
+              <label
+                >Hiring date:
+                <input
+                  class="form__input form__input--small"
+                  id="hiring-date"
+                  readonly
+              /></label>
+              <label
+                >Tax:
+                <input
+                  class="form__input form__input--small form__tax-input"
+                  id="tax"
+                  readonly
+              /></label>
+              <label
+                >Firing date:
+                <input
+                  class="form__input form__input--small"
+                  id="firing-date"
+                  readonly
+              /></label>
+            </div>
+          </div>
+          <div class="horizontal-container">
+            <input
+              class="form__button main-theme"
+              id="search-btn"
+              type="button"
+              value="Search"
+            />
+            <input
+              class="form__button main-theme"
+              id="reset-btn"
+              type="reset"
+              value="Reset"
+            />
+          </div>
+        </form>
+      </main>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

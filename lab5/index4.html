@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>task3</title>
+
+   <script>
+      function pickPhoto(pic) {
+         pic.width *= 3;
+      }
+
+      function outPhoto(pic) {
+         pic.width /= 3;
+      }
+   </script>
+</head>
+
+<body>
+   <div>
+      <img src="./assets/p1.gif" width="90" name="pic1" onmouseenter="pickPhoto(pic1)" onmouseleave="outPhoto(pic1)">
+      <img src="./assets/p2.gif" width="90" name="pic2" onmouseenter="pickPhoto(pic2)" onmouseleave="outPhoto(pic2)">
+      <img src="./assets/p3.gif" width="90" name="pic3" onmouseenter="pickPhoto(pic3)" onmouseleave="outPhoto(pic3)">
+   </div>
+</body>
+
+</html>

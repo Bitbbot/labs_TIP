@@ -1,0 +1,57 @@
+.body {
+  background-color: gray;
+}
+
+.main-theme {
+  background-color: blue;
+  color: white;
+}
+
+.container {
+  margin: 0;
+  width: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.header {
+  box-shadow: 0px 1px gray;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 1rem 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.content {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.section__header {
+  margin: 3.6px;
+  font-weight: 400;
+  font-size: xx-large;
+  text-decoration: underline;
+}
+
+.moto-table {
+  width: 500px;
+  margin: 10px auto;
+  border: 2px solid blue;
+}
+
+.moto-table td {
+  width: 50%;
+  padding: 8px;
+  border: 2px solid gray;
+}
+
+.section__result {
+  font-weight: bold;
+}

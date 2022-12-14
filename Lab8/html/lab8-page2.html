@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lab3 | Task2</title>
+    <link rel="stylesheet" href="../css/page-style.css" />
+    <link rel="stylesheet" href="../css/form-style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="main-nav">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="lab8-page1.html">Task1</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Task2</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <main class="content">
+        <form class="form">
+          <h2 class="form__caption">Staff information</h2>
+          <div class="form__section">
+            <h3 class="form__section-caption">Search parameters</h3>
+            <label for="employee-id">Personnel number:</label>
+            <input
+              id="employee-id"
+              class="form__input form__input"
+              type="number"
+              min="0"
+              required
+            />
+          </div>
+          <div class="form__section">
+            <h3 class="form__section-caption">Search result</h3>
+            <div class="horizontal-container form__wrap-container">
+              <label
+                >Income:
+                <input
+                  class="form__input form__input--x-small"
+                  id="income"
+                  readonly
+              /></label>
+              <label
+                >Working days:
+                <input
+                  class="form__input form__input--x-small"
+                  id="work-days"
+                  readonly
+              /></label>
+              <label
+                >Weekends:
+                <input
+                  class="form__input form__input--x-small"
+                  id="weekends"
+                  readonly
+              /></label>
+            </div>
+          </div>
+          <div class="form__section">
+            <h3 class="form__section-caption">Employee info</h3>
+            <div class="horizontal-container form__wrap-container">
+              <label
+                >Surname:
+                <input
+                  class="form__input form__input--small"
+                  id="surname"
+                  readonly
+              /></label>
+              <label
+                >Hiring date:
+                <input
+                  class="form__input form__input--small"
+                  id="hiring-date"
+                  readonly
+              /></label>
+              <label
+                >Tax:
+                <input
+                  class="form__input form__input--small form__tax-input"
+                  id="tax"
+                  readonly
+              /></label>
+              <label
+                >Firing date:
+                <input
+                  class="form__input form__input--small"
+                  id="firing-date"
+                  readonly
+              /></label>
+            </div>
+          </div>
+          <div class="horizontal-container">
+            <input
+              class="form__button main-theme"
+              id="search-btn"
+              type="button"
+              value="Search"
+            />
+            <input
+              class="form__button main-theme"
+              id="reset-btn"
+              type="reset"
+              value="Reset"
+            />
+          </div>
+        </form>
+      </main>
+    </div>
+    <script src="../js/task2.js"></script>
+  </body>
+</html>

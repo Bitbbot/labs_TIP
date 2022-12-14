@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lab3 | Task1</title>
+    <link rel="stylesheet" href="../css/page-style.css" />
+    <link rel="stylesheet" href="../css/form-style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="main-nav">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Task1</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="lab8-page2.html">Task2</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <main class="content">
+        <form id="form-classes" class="form">
+          <h2 class="form__caption">Time input</h2>
+          <div class="form__section">
+            <h3 class="form__section-caption">Beginning of classes time</h3>
+            <div>
+              <label for="time-input">Time:</label>
+              <input
+                id="time-input"
+                class="form__input form__input--large"
+                type="time"
+              />
+            </div>
+          </div>
+          <label for="result" class="form__result-label">Result:</label
+          ><output id="result" class="form__result-time">0</output>
+          <div class="horizontal-container">
+            <input
+              id="calc-btn"
+              class="form__button main-theme"
+              type="button"
+              value="Calculate"
+            />
+            <button id="reset-btn" class="form__button main-theme" type="reset">
+              Reset
+            </button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <script src="../js/task1.js"></script>
+  </body>
+</html>

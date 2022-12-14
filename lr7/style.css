@@ -1,0 +1,17 @@
+#pizzas {
+  display: flex;
+  flex-direction: row;
+}
+.pizza {
+  width: 150px;
+  margin: 10px;
+  background-color: rgb(233, 217, 155);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
